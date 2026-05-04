@@ -13,8 +13,7 @@ class TrackerController
 
         $visitorId = $data['visitorId'] ?? md5($_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT']);
         $city = $data['city'] ?? $this->getCityByIp($_SERVER['REMOTE_ADDR']);
-var_dump($_SERVER['REMOTE_ADDR']);
-die;
+
         $visitData = [
             'visitor_id' => $visitorId,
             'ip' => $_SERVER['REMOTE_ADDR'],

@@ -1,5 +1,5 @@
 (function() {
-  const API_URL = 'https://0eac-89-124-69-165.ngrok-free.app/api/track';
+  const API_URL = 'http://amo-point-3.tw1.su/api/track';
   async function track() {
     const data = {
       visitorId: localStorage.getItem('visitor_id') || (() => {
